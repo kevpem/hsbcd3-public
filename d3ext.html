@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>d3 Extension</title>
+
+    <!-- Required libraries -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Tableau Extensions API Library  -->
+    <!-- library is in the /lib directory -->
+    <script type="text/javascript"
+        src="https://tableau.github.io/extensions-api/lib/tableau.extensions.1.latest.js"></script>
+    <!-- d3 library -->
+    <script src="http://d3js.org/d3.v4.min.js"></script>
+    <!-- Dimple d3 wrapper -->
+    <script src="http://dimplejs.org/dist/dimple.v2.3.0.min.js"></script>
+    <!-- Extension code -->
+    <script type="text/javascript" src="./d3ext.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="config">
+            <div id="worksheetForm">
+                Target Worksheet:
+                <select id="worksheetDropdown">
+                    <option>Choose a worksheet</option>
+                </select></br>
+                <button id="configButton" class="btn btn-primary">Save Worksheet</button>
+            </div>
+        </div>
+
+        <div id="main">
+            <h4>D3 Viz</h4>
+            <hr>
+            <div id="vizcontainer"></div>
+        </div>
+    </div>
+</body>
+
+</html>
